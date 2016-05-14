@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>
+Ruby Backend Test
+</title>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["nam"].value;
+    var y = document.forms["myForm"]["num"].value;
+    var nm = /^[A-Za-z]+$/;
+    if (!nm.test(x)) {
+        alert("Name must be letters only(No Spaces)!");
+        return false;
+    }
+   var pnum  = /\d\d\d-\d\d\d-\d\d\d\d/;
+   if (!pnum.test(y)) {
+        alert('Phone number has to in the form of XXX-XXX-XXXX !');
+        return false;
+    }
+}
+</script>
+</head>
+
+<body>
+<form name="myForm" action="http://xxxxxxxxxxxxxxxxxx/cgi-bin/display.cgi"
+onsubmit="return validateForm()" method="post">
+Enter your name: <input type="text" name="nam">
+<br> 
+Enter your address of format(Number Street Province) separated by a space: <input type="text" name="place">
+<br>
+Enter your phone number of format (XXX-XXX-XXXX): <input type="text" name="num">
+<br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+

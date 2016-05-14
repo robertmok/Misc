@@ -1,0 +1,26 @@
+div {
+   text-align: center;
+   font-size: 1000%;
+   color: blue;
+   -webkit-animation-name: one; /* Chrome, Safari, Opera */
+   -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+   animation-name: one;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes one {
+    0%   {color: blue;}
+    100% {color: orange;}
+}
+
+/* Standard syntax */
+@keyframes one {
+    0%   {color: blue;}
+    100% {color: orange;}
+}
+
+
+
+
