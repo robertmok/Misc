@@ -1,0 +1,28 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+	.proj-wrap .proj-image {
+		width: 160px;
+		height: 160px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.proj-wrap .proj-image img {
+		width: 100%;
+		height: auto;
+	}
+
+	.proj-wrap .proj-desc {
+		width: 100%;
+		padding: 0px 0px 0px 180px;
+		border: none;
+	}
+
+
+
+}
